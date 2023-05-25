@@ -59,9 +59,9 @@ Then, after changing into the target build directory, enter the following comman
 
 ```bash
 g++ -g -std=c++17 -Wall -O0 ../../src/host.cpp -o ./app.exe -I$XILINX_XRT/include/ -L$XILINX_XRT/lib -lxrt_coreutil -pthread
-emconfigutil --platform xilinx_u250_gen3x16_xdma_4_1_202210_1
-v++ -c -t sw_emu --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --config ../../src/u250.cfg -k vadd -I../../src ../../src/vadd.cpp -o ./vadd.xo 
-v++ -l -t sw_emu --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --config ../../src/u250.cfg ./vadd.xo -o ./vadd.xclbin
+emconfigutil --platform xilinx_u200_gen3x16_xdma_2_202110_1
+v++ -c -t sw_emu --platform xilinx_u200_gen3x16_xdma_2_202110_1 --config ../../src/u250.cfg -k vadd -I../../src ../../src/vadd.cpp -o ./vadd.xo 
+v++ -l -t sw_emu --platform xilinx_u200_gen3x16_xdma_2_202110_1 --config ../../src/u250.cfg ./vadd.xo -o ./vadd.xclbin
 ```
 
 Here is a brief explanation of each of these four commands:
@@ -132,9 +132,9 @@ Then, after changing into the target build directory, enter the following comman
 
 ```bash
 g++ -g -std=c++17 -Wall -O0 ../../src/host.cpp -o ./app.exe -I$XILINX_XRT/include/ -L$XILINX_XRT/lib -lxrt_coreutil -pthread
-emconfigutil --platform xilinx_u250_gen3x16_xdma_4_1_202210_1
-v++ -c -t hw_emu --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --config ../../src/u250.cfg -k vadd -I../../src ../../src/vadd.cpp -o ./vadd.xo 
-v++ -l -t hw_emu --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --config ../../src/u250.cfg ./vadd.xo -o ./vadd.xclbin
+emconfigutil --platform xilinx_u200_gen3x16_xdma_2_202110_1
+v++ -c -t hw_emu --platform xilinx_u200_gen3x16_xdma_2_202110_1 --config ../../src/u250.cfg -k vadd -I../../src ../../src/vadd.cpp -o ./vadd.xo 
+v++ -l -t hw_emu --platform xilinx_u200_gen3x16_xdma_2_202110_1 --config ../../src/u250.cfg ./vadd.xo -o ./vadd.xclbin
 ```
 
 Refer to *Targeting Software Emulation* for a brief explanation of these different commands. The only difference with the previous step is the `v++` target (`-t`) option which is changed from `sw_emu` to `hw_emu`. All other options remain the same.
@@ -163,8 +163,8 @@ Then, after changing into the target build directory, enter the following comman
 
 ```bash
 g++ -g -std=c++17 -Wall -O0 ../../src/host.cpp -o ./app.exe -I$XILINX_XRT/include/ -L$XILINX_XRT/lib -lxrt_coreutil -pthread
-v++ -c -t hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --config ../../src/u250.cfg -k vadd -I../../src ../../src/vadd.cpp -o ./vadd.xo 
-v++ -l -t hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --config ../../src/u250.cfg ./vadd.xo -o ./vadd.xclbin
+v++ -c -t hw --platform xilinx_u200_gen3x16_xdma_2_202110_1 --config ../../src/u250.cfg -k vadd -I../../src ../../src/vadd.cpp -o ./vadd.xo 
+v++ -l -t hw --platform xilinx_u200_gen3x16_xdma_2_202110_1 --config ../../src/u250.cfg ./vadd.xo -o ./vadd.xclbin
 ```
 
 To target hardware, the `v++ -t` option is set to `hw` and the `emconfigutil` command is not needed, as you will be running on an actual hardware platform rather than an emulated platform. All other options remain identical.
