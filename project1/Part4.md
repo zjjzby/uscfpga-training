@@ -49,7 +49,7 @@
 To build for software emulation, enter the following commands to setup the target build directory:
 
 ```bash
-cd <Path to the cloned repo>/Getting_Started/Vitis/example/u200
+cd ./example/u200
 mkdir sw_emu
 cp xrt.ini sw_emu
 cd sw_emu
@@ -122,7 +122,7 @@ These files and reports are the results of the build and run process targeting t
 To build for hardware emulation, enter the following commands to setup the target build directory:
 
 ```bash
-cd <Path to the cloned repo>/Getting_Started/Vitis/example/u200
+cd ./example/u200
 mkdir hw_emu
 cp xrt.ini hw_emu
 cd hw_emu
@@ -153,7 +153,7 @@ When the run completes, you should see the TEST PASSED message indicating that t
 To build for the hardware target, enter the following commands to set up the target build directory:
 
 ```bash
-cd <Path to the cloned repo>/Getting_Started/Vitis/example/u200
+cd ./example/u200
 mkdir hw
 cp xrt.ini hw
 cd hw
