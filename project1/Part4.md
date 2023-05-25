@@ -41,7 +41,7 @@
 * Then make sure the following environment variable is correctly set to point to your U200 platform installation directory.
 
   ```bash
-  export PLATFORM_REPO_PATHS=<path to the u200 platform install dir>
+  export PLATFORM_REPO_PATHS=/opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_2_202110_1
   ```
 
 ### Targeting Software Emulation
