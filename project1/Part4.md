@@ -34,8 +34,8 @@
 * To configure the environment to run Vitis, source the following scripts:
 
   ```bash
-  source <VITIS_install_path>/settings64.sh
-  source <XRT_install_path>/setup.sh
+  source /opt/xilinx/xrt/setup.sh
+  source /tools/Xilinx/Vitis/2021.1/settings64.sh
   ```
 
 * Then make sure the following environment variable is correctly set to point to your U200 platform installation directory.
