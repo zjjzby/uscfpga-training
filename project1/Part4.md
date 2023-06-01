@@ -35,7 +35,7 @@
 
   ```bash
   source /opt/xilinx/xrt/setup.sh
-  source /tools/Xilinx/Vitis/2021.1/settings64.sh
+  source /tools/Xilinx/Vitis/2022.2/settings64.sh
   ```
 
 * Then make sure the following environment variable is correctly set to point to your U200 platform installation directory.
@@ -164,7 +164,7 @@ Then, after changing into the target build directory, enter the following comman
 ```bash
 g++ -g -std=c++17 -Wall -O0 ../../src/host.cpp -o ./app.exe -I$XILINX_XRT/include/ -L$XILINX_XRT/lib -lxrt_coreutil -pthread
 v++ -c -t hw --platform xilinx_u200_gen3x16_xdma_2_202110_1 --config ../../src/u200.cfg -k vadd -I../../src ../../src/vadd.cpp -o ./vadd.xo 
-v++ -l -t hw --platform xilinx_u200_gen3x16_xdma_2_202110_1 --config ../../src/u200.cfg ./vadd.xo -o ./vadd.xclbin
+v++ -R2 -l -t hw --platform xilinx_u200_gen3x16_xdma_2_202110_1 --config ../../src/u200.cfg ./vadd.xo -o ./vadd.xclbin
 ```
 
 To target hardware, the `v++ -t` option is set to `hw` and the `emconfigutil` command is not needed, as you will be running on an actual hardware platform rather than an emulated platform. All other options remain identical.
