@@ -9,7 +9,7 @@
 
 # Using Multiple DDR Banks
 
-***Version: Vitis 2023.1***
+***Version: Vitis 2022.2***
 
 ## Introduction
 
@@ -44,7 +44,7 @@ The example in this tutorial uses a C++ kernel; however, the steps described are
 The labs in this tutorial use:
 
 * BASH Linux shell commands.
-* 2023.1 Vitis core development kit release and the *xilinx_u250_gen3x16_xdma_4_1_202210_1* platform. If necessary, it can be easily extended to other versions and platforms.
+* 2023.1 Vitis core development kit release and the *xilinx_u200_gen3x16_xdma_2_202110_1* platform. If necessary, it can be easily extended to other versions and platforms.
 
 >**IMPORTANT:**
 >
@@ -70,7 +70,7 @@ Note: This tutorial showcases only hw_emu flow. If the user wants to run HW flow
 
    ```bash
      #setup Xilinx Vitis tools, XILINX_VITIS and XILINX_VIVADO will be set in this step. source <VITIS install path>/settings64.sh. for example:
-     source /opt/Xilinx/Vitis/2023.1/settings64.sh
+     source /tools/Xilinx/Vitis/2022.2/settings64.sh
      #Setup runtime. XILINX_XRT will be set in this step
      source /opt/xilinx/xrt/setup.sh
    ```
@@ -85,7 +85,7 @@ Note: This tutorial showcases only hw_emu flow. If the user wants to run HW flow
    >**Makefile Options Descriptions**
    >
    >* `MODE := hw_emu`: Set the build configuration mode to HW Emulation
-   >* `PLATFORM := xilinx_u250_gen3x16_xdma_4_1_202210_1`: Select the target platform
+   >* `PLATFORM := xilinx_u200_gen3x16_xdma_2_202110_1`: Select the target platform
    >* `KERNEL_SRC := src/vadd.cpp`: List the kernel source files
    >* `HOST_SRC := src/host.cpp`: List the host source files
 
