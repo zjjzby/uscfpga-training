@@ -8,7 +8,7 @@
 
 # Using Multiple Compute Units
 
-***Version: Vitis 2023.1***
+***Version: Vitis 2022.2***
 
 ## Introduction
 
