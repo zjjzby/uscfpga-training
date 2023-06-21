@@ -37,7 +37,7 @@ An OpenCV version of the host code is also provided in the source code directory
 This tutorial uses:
 
 * BASH Linux shell commands
-* 2023.1 Vitis core development kit release and the *xilinx_u250_gen3x16_xdma_4_1_202210_1* platform.
+* 2022.2 Vitis core development kit release and the *xilinx_u200_gen3x16_xdma_2_202110_1* platform.
 If necessary, it can be easily extended to other versions and platforms.
 
 >**IMPORTANT:**
@@ -125,7 +125,7 @@ Review the generated Timeline Trace report (`opencl_trace.csv`).
    vitis_analyzer xrt.run_summary
    ```
 
->**NOTE:** In the 2023.1 release, this command opens the Analysis view of the new Vitis Unified IDE and loads the run summary as described in [Working with the Analysis View](https://docs.xilinx.com/r/en-US/ug1393-vitis-application-acceleration/Working-with-the-Analysis-View). Navigate to the various reports using the left pane of the Analysis view or by clicking on the links provided in the summary report.
+>**NOTE:** In the 2022.2 release, this command opens the Analysis view of the new Vitis Unified IDE and loads the run summary as described in [Working with the Analysis View](https://docs.xilinx.com/r/en-US/ug1393-vitis-application-acceleration/Working-with-the-Analysis-View). Navigate to the various reports using the left pane of the Analysis view or by clicking on the links provided in the summary report.
 
 The run directory contains a file named `xrt.ini`. This file contains runtime options that generate additional reports such as the Profile Summary report and Timeline Trace.
 
