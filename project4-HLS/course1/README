@@ -13,6 +13,9 @@ Running the Design (edit run_hls.tcl to set $hls_exec and enable specific run st
 =========================================================
 vitis_hls -f run_hls.tcl
 
+After that, use "vitis_hls gui" and open project which is in "prj" folder
+
+
 This is done by changing the default channel type via the TCL config_dataflow 
 directive in the run_hls.tcl file. 
 
